@@ -55,9 +55,9 @@ namespace Semenar2
                 Console.WriteLine("Error!");
 
             //Задача 4: Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
-           double Del(int a, int b)
+           int Pow(int a)
             {
-                return a / b;
+                return a * a;
             }
             bool Checks(double a, int b)
             {
@@ -67,7 +67,11 @@ namespace Semenar2
             Console.WriteLine("Задание 4:");
             int number4 = Input("Введите первое число ");
             int number5 = Input("Введите второе число ");
-            if (Checks(Del(number4, number5), number5) || Checks(Del(number5, number4), number4))
+            int c = Pow(number4);
+            Console.WriteLine(c);
+            c = Pow(number5);
+            Console.WriteLine(c);
+            if (Checks(Pow(number4), number5) || Checks(Pow(number5), number4))
                 Console.WriteLine("Является");
             else
                 Console.WriteLine("Не является");
