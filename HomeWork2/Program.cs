@@ -55,11 +55,11 @@ namespace Semenar2
                 Console.WriteLine("Error!");
 
             //Задача 4: Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
-            int Del(int a, int b)
+           double Del(int a, int b)
             {
                 return a / b;
             }
-            bool Checks(int a, int b)
+            bool Checks(double a, int b)
             {
                 return a == b;
             }
