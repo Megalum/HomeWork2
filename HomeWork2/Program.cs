@@ -24,9 +24,9 @@ namespace Semenar2
                     return a / 10 % 10;
                 }
                 Console.WriteLine("Задание 1:");
-                int number = Input("Введите число ");
-                if (number / 100 < 10)
-                    Console.WriteLine($"Вторая цифра числа {number} --> {Two(number)}");
+                int firstNumber = Input("Введите число ");
+                if (firstNumber / 100 < 10)
+                    Console.WriteLine($"Вторая цифра числа {firstNumber} --> {Two(firstNumber)}");
                 else
                     Console.WriteLine("Вы ввели не трёхзначное число");
 
@@ -37,11 +37,11 @@ namespace Semenar2
                 }
                 Console.WriteLine();
                 Console.WriteLine("Задание 2:");
-                number = Input("Введите число ");
-                if (number / 100 == 0)
+                firstNumber = Input("Введите число ");
+                if (firstNumber / 100 == 0)
                     Console.WriteLine("Третьей цифры нет");
                 else
-                    Console.WriteLine($"Третья цифра числа {number} --> {Three(number)}");
+                    Console.WriteLine($"Третья цифра числа {firstNumber} --> {Three(firstNumber)}");
 
                 //Задача 3: Напишите программу, которая принимает нa вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
                 bool Check(int a)
@@ -50,9 +50,9 @@ namespace Semenar2
                 }
                 Console.WriteLine();
                 Console.WriteLine("Задание 3:");
-                number = Input("Введите число ");
-                if (number < 8)
-                    if (Check(number))
+                firstNumber = Input("Введите число ");
+                if (firstNumber < 8)
+                    if (Check(firstNumber))
                         Console.WriteLine("Рабочий день");
                     else
                         Console.WriteLine("Выходной день");
@@ -66,9 +66,9 @@ namespace Semenar2
                 }
                 Console.WriteLine();
                 Console.WriteLine("Задание 4:");
-                number = Input("Введите первое число ");
-                int number2 = Input("Введите второе число ");
-                if (Checks(number, number2) || Checks(number2, number))
+                firstNumber = Input("Введите первое число ");
+                int secondNumber = Input("Введите второе число ");
+                if (Checks(firstNumber, secondNumber) || Checks(secondNumber, firstNumber))
                     Console.WriteLine("Является");
                 else
                     Console.WriteLine("Не является");
